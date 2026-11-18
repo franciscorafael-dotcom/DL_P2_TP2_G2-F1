@@ -2,3 +2,6 @@ numpy==2.5.5
 pandas==3.1.1
 matplotlib==3.11.2
 Pillow==13.0.0
+tensorflow[and-cuda]==2.22.0rc1
+keras
+scikit-learn==1.8.0
