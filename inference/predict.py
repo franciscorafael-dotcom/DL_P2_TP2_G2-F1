@@ -108,9 +108,12 @@ def preprocess_image(image_path):
             image = ImageOps.exif_transpose(image)
             image = image.convert("RGB")
 
-            image = image.resize(
+            # Mesmo redimensionamento do treino: mantém a proporção e preenche com barras pretas
+            image = ImageOps.pad(
+                image,
                 (IMG_SIZE, IMG_SIZE),
-                Image.Resampling.BILINEAR
+                method=Image.Resampling.BILINEAR,
+                color=(0, 0, 0)
             )
 
             image_array = np.asarray(
