@@ -31,7 +31,7 @@ SPLITS_PATH = PROJECT_ROOT / "data" / "splits.json"
 #   2) a confiança fica abaixo do limiar (apanha o que a classe "Outro" não cobre).
 # O limiar é escolhido na validação (última célula do notebook de treino).
 CLASSE_OUTRO = "Outro"
-LIMIAR_CONFIANCA = 0.70   # substituir pelo valor indicado pelo notebook de treino
+LIMIAR_CONFIANCA = 0.58   # substituir pelo valor indicado pelo notebook de treino
 
 
 # --------------------------------------------------
